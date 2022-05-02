@@ -8,9 +8,12 @@
 import UIKit
 
 class TaskListTableViewController: UITableViewController {
-
+    private let cellID = "Task"
+    private var taskList: [Task] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         setupNavigationBar()
     }
 
@@ -38,4 +41,21 @@ class TaskListTableViewController: UITableViewController {
     }
     
 }
+
+// MARK: - UITableViewDataSource
+extension TaskListTableViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        taskList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let task = taskList[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = task.title
+        cell.contentConfiguration = content
+        return cell
+    }
+}
+
 
