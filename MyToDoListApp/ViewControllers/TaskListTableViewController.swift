@@ -37,9 +37,8 @@ class TaskListTableViewController: UITableViewController {
     }
     
     @objc private func addNewTask() {
-       
+        showAlert()
     }
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -58,4 +57,20 @@ extension TaskListTableViewController {
     }
 }
 
-
+// MARK: - Alert Controller
+extension TaskListTableViewController {
+    private func showAlert(task: Task? = nil, completion: (() -> Void)? = nil) {
+        let title = task != nil ? "Update task" : "New Task"
+        let alert = UIAlertController.createAlertController(withTitle: title)
+        
+        alert.action(task: task) { [weak self] taskName in
+            if let task = task, let completion = completion {
+                completion()
+            } else {
+                print(taskName)
+            }
+        }
+        
+        present(alert, animated: true)
+    }
+}
