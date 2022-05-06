@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB193B8328258F7D00709E87 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB193B8228258F7D00709E87 /* StorageManager.swift */; };
 		DB427957281E9F5200D1CE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB427956281E9F5200D1CE12 /* AppDelegate.swift */; };
 		DB42795B281E9F5200D1CE12 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42795A281E9F5200D1CE12 /* TaskListTableViewController.swift */; };
 		DB427961281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB42795F281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB193B8228258F7D00709E87 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		DB427953281E9F5200D1CE12 /* MyToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB427956281E9F5200D1CE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB42795A281E9F5200D1CE12 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB193B8428258FA300709E87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB193B8228258F7D00709E87 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DB42794A281E9F5200D1CE12 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 				DB42797128218CD600D1CE12 /* App */,
 				DB42796F28218C8100D1CE12 /* ViewControllers */,
 				DB42797228218D7000D1CE12 /* Resources */,
+				DB193B8428258FA300709E87 /* Services */,
 				DB42797028218CB500D1CE12 /* Models */,
 			);
 			path = MyToDoListApp;
@@ -167,6 +178,7 @@
 			files = (
 				DB42796E2821828C00D1CE12 /* Extensions + UIAlertController.swift in Sources */,
 				DB42795B281E9F5200D1CE12 /* TaskListTableViewController.swift in Sources */,
+				DB193B8328258F7D00709E87 /* StorageManager.swift in Sources */,
 				DB427957281E9F5200D1CE12 /* AppDelegate.swift in Sources */,
 				DB427961281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld in Sources */,
 			);
@@ -304,6 +316,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +345,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

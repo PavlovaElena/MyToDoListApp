@@ -15,6 +15,7 @@ class TaskListTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         setupNavigationBar()
+        fetchData()
     }
 
     private func setupNavigationBar() {
@@ -38,6 +39,27 @@ class TaskListTableViewController: UITableViewController {
     
     @objc private func addNewTask() {
         showAlert()
+    }
+    
+    private func save(taskName: String) {
+        StorageManager.shared.save(taskName) { task in
+            taskList.append(task)
+            tableView.insertRows(
+                at: [IndexPath(row: taskList.count - 1, section: 0)],
+                with: .automatic
+            )
+        }
+    }
+    
+    private func fetchData() {
+        StorageManager.shared.fetchData { result in
+            switch result {
+            case .success(let tasks):
+                taskList = tasks
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -65,9 +87,10 @@ extension TaskListTableViewController {
         
         alert.action(task: task) { [weak self] taskName in
             if let task = task, let completion = completion {
+                StorageManager.shared.editTitleTask(task, newName: taskName)
                 completion()
             } else {
-                print(taskName)
+                self?.save(taskName: taskName)
             }
         }
         
