@@ -51,6 +51,16 @@ class StorageManager {
         saveContext()
     }
     
+    func editDoneStatus(_ task: Task, newDoneStatus: Bool) {
+        task.isDone = newDoneStatus
+        saveContext()
+    }
+    
+    func editImportantMarker(_ task: Task, newImportantMarker: Bool) {
+        task.isImportantTask = newImportantMarker
+        saveContext()
+    }
+    
     func delete(_ task: Task) {
         viewContext.delete(task)
         saveContext()

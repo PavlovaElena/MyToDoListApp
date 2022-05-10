@@ -1,5 +1,5 @@
 //
-//  Extensions + UIAlertController.swift
+//  Extension + UIAlertController.swift
 //  MyToDoListApp
 //
 //  Created by Елена Павлова on 03.05.2022.

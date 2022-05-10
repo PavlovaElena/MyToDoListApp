@@ -12,7 +12,8 @@
 		DB42795B281E9F5200D1CE12 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42795A281E9F5200D1CE12 /* TaskListTableViewController.swift */; };
 		DB427961281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB42795F281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld */; };
 		DB427963281E9F5700D1CE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB427962281E9F5700D1CE12 /* Assets.xcassets */; };
-		DB42796E2821828C00D1CE12 /* Extensions + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42796D2821828C00D1CE12 /* Extensions + UIAlertController.swift */; };
+		DB42796E2821828C00D1CE12 /* Extension + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42796D2821828C00D1CE12 /* Extension + UIAlertController.swift */; };
+		DBF8322A282ACC0200FF5E54 /* Extension + UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF83229282ACC0200FF5E54 /* Extension + UITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		DB427960281E9F5200D1CE12 /* MyToDoListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyToDoListApp.xcdatamodel; sourceTree = "<group>"; };
 		DB427962281E9F5700D1CE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB427967281E9F5700D1CE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB42796D2821828C00D1CE12 /* Extensions + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIAlertController.swift"; sourceTree = "<group>"; };
+		DB42796D2821828C00D1CE12 /* Extension + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIAlertController.swift"; sourceTree = "<group>"; };
+		DBF83229282ACC0200FF5E54 /* Extension + UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITableViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				DB42795A281E9F5200D1CE12 /* TaskListTableViewController.swift */,
-				DB42796D2821828C00D1CE12 /* Extensions + UIAlertController.swift */,
+				DB42796D2821828C00D1CE12 /* Extension + UIAlertController.swift */,
+				DBF83229282ACC0200FF5E54 /* Extension + UITableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,9 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB42796E2821828C00D1CE12 /* Extensions + UIAlertController.swift in Sources */,
+				DB42796E2821828C00D1CE12 /* Extension + UIAlertController.swift in Sources */,
 				DB42795B281E9F5200D1CE12 /* TaskListTableViewController.swift in Sources */,
 				DB193B8328258F7D00709E87 /* StorageManager.swift in Sources */,
+				DBF8322A282ACC0200FF5E54 /* Extension + UITableViewCell.swift in Sources */,
 				DB427957281E9F5200D1CE12 /* AppDelegate.swift in Sources */,
 				DB427961281E9F5200D1CE12 /* MyToDoListApp.xcdatamodeld in Sources */,
 			);
