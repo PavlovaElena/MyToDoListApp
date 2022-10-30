@@ -13,6 +13,5 @@ You can mark a task as "important" and/or "done":
 
 ## Tech Stack:  
 * UIKit
-* Storyboard
 * MVC
 * CoreData
